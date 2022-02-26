@@ -1,4 +1,8 @@
 .header {
+    &__top {
+        padding: 20px 0 8px 90px;
+    }
+
     &__nav {
         width: 100%;
         height: 39px;
@@ -10,5 +14,6 @@
         height: 42px;
         border: none;
         background: $mainColor;
+        display: none;
     }
 }
