@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.min.css">
     <link rel="icon" href="./assets/images/favicon.png" />
     <title>Test task</title>
@@ -13,22 +16,27 @@
 <body>
 
     <header class="header">
-        <div class="header__inner">
-            <div class="header__top">
-                <a class="header__logo" href="#"><img class="header__img" src="./assets/images/logo-big.svg" alt="Изображение логотипа 'Юнипро'"></a>
-                <button class="header__btn" type="button" aria-label="Открыть мобильное меню" aria-hidden="true" style="cursor: pointer"></button>
+        <div class="header__container">
+            <div class="header__inner">
+                <div class="header__top">
+                    <a class="header__logo" href="#"><img class="header__img" src="./assets/images/logo-big.svg" alt="Изображение логотипа 'Юнипро'"></a>
+                    <button class="header__btn" type="button" aria-label="Открыть мобильное меню" aria-hidden="true" style="cursor: pointer"></button>
+                </div>
+                <nav class="header__nav"></nav>
             </div>
-            <nav class="header__nav"></nav>
         </div>
     </header>
-    <section class="main">
-        <h1 hidden>Main</h1>
-        <div class="main__inner">
-            <div class="main__content">
-                    <img class="main__content-img" src="" alt="Фотография Шатурской ГРЭС">
-                    <div class="main__content-info"></div>
+
+    <section class="banner">
+        <div class="banner__container">
+            <h1 hidden>Banner</h1>
+            <div class="banner__inner">
+                <div class="banner__content">
+                        <div class="banner__img-wrap"><img class="banner__img" src="./assets/images/hero-image.jpg" alt="Фотография Шатурской ГРЭС"></div>
+                        <div class="banner__info"></div>
+                </div>
+                <div class="banner__quotes"><span class="banner__span">котировки</span></div>
             </div>
-            <div class="main__quotes"></div>
         </div>
     </section>
 
@@ -47,8 +55,8 @@
 
 
 
-    <script src="./assets/js/lib.js"></script>
-    <script src="./assets/js/main.js"></script>
+    <!-- <script src="./assets/js/lib.js"></script>
+    <script src="./assets/js/main.js"></script> -->
 </body>
 
 </html>

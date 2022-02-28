@@ -1,4 +1,10 @@
 .header {
+    &__container {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
     &__top {
         padding: 20px 0 8px 90px;
     }
