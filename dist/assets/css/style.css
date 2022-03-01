@@ -359,7 +359,7 @@ template {
 .header__container {
     max-width: 980px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
 .header__top {
@@ -383,7 +383,7 @@ template {
 .banner__container {
     max-width: 980px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
 .banner__inner {
@@ -459,34 +459,19 @@ template {
     font-size: 18px;
     line-height: 21px;
     color: #000000;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
     background: #C4C4C4;
 }
 
 @media screen and (max-width: 768px) {
     .banner__quotes {
-        -ms-flex-pack: start;
-        justify-content: start;
-        -ms-flex-align: start;
-        align-items: start;
+        font-size: 14px;
+        line-height: 16px;
     }
 }
 
 .banner__span {
-    -webkit-transform: translateY(-36px);
-    transform: translateY(-36px);
-}
-
-@media screen and (max-width: 768px) {
-    .banner__span {
-        -webkit-transform: translateX(36px);
-        transform: translateX(36px);
-        -webkit-transform: translateY(42px);
-        transform: translateY(42px);
-    }
+    -webkit-transform: translateX(45px);
+    transform: translateX(45px);
+    -webkit-transform: translateY(130px);
+    transform: translateY(130px);
 }
