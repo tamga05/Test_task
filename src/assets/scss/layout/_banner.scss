@@ -1,8 +1,7 @@
 .banner {
     &__container {
-        max-width: 980px;
+        max-width: 960px;
         margin: 0 auto;
-        padding: 0 5px;
     }
 
     &__inner {
@@ -10,18 +9,20 @@
         padding-top: 23px;
         padding-bottom: 25px;
         display: grid;
-        // grid-template-rows: 1;
+        grid-template-rows: 1;
         grid-template-columns: 1fr 180px;
         column-gap: 14px;
 
         @media screen and (max-width: 768px) {
             column-gap: 0;
-            padding-top: 0;
+            padding: 0 20px 25px;
         }
 
         @media screen and (max-width: 414px) {
+            max-height: 100%;
             grid-template-columns: 1fr;
             grid-template-rows: 2;
+            padding: 0;
         }
     }
 
@@ -50,17 +51,19 @@
 
     &__img {
         max-width: 100%;
+        height: 319px;
 
         @media screen and (max-width: 768px) {
             width: 100%;
             max-height: 319px;
+            height: 100%;
         }
     }
 
     &__info {
         width: 255px;
         height: 100%;
-        background: #0078DC;
+        background: $mainColor;
 
         @media screen and (max-width: 768px) {
             display: none;
@@ -95,16 +98,11 @@
     &__quotes {
         width: 180px;
         height: 100%;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 21px;
-        color: #000000;
+        @extend %bigFont;
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #C4C4C4;
+        background: $secondaryColor;
 
         @media screen and (max-width: 768px) {
             font-size: 14px;
@@ -115,12 +113,12 @@
 
         @media screen and (max-width: 414px) {
             width: 100%;
-            height: 316px;
+            height: 319px;
         }
     }
 
     &__span {
-        transform: translateY(-36px);
+        // transform: translateY(-36px);
 
         @media screen and (max-width: 768px) {
             // transform: translateX(36px);
