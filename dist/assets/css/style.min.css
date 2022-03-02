@@ -649,17 +649,16 @@ template {
   height: 44px;
   background: #C4C4C4; }
 
-.footer__top {
-  background-color: #f6a839;
-  margin-top: 5px; }
+.footer__container {
+  max-width: 960px;
+  margin: 0 auto; }
 
-.footer__top-wrapper {
-  max-width: 1720px;
+.footer__inner {
+  padding-bottom: 41px; }
+
+.footer__main {
+  height: 330px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 80px 0 95px; }
+  background: #0078DC; }
 
 /*# sourceMappingURL=style.min.css.map */
