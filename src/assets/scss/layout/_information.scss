@@ -70,6 +70,7 @@
     }
 
     &__public-1 {
+        height: 100%;
         @extend %bigFont;
         background: $secondaryColor;
 
@@ -95,9 +96,15 @@
         @media screen and (max-width: 414px) {
             padding: 0 10px;
         }
+
+        @media screen and (max-width: 360px) {
+            padding: 0 15px;
+            background: #F0F0F0;
+        }
     }
 
     &__public-2 {
+        height: 100%;
         @extend %bigFont;
         background: $secondaryColor;
 
@@ -117,9 +124,15 @@
         @media screen and (max-width: 414px) {
             padding: 0 10px;
         }
+
+        @media screen and (max-width: 360px) {
+            padding: 0 15px;
+            background: #F0F0F0;
+        }
     }
 
     &__public-3 {
+        height: 100%;
         @extend %bigFont;
         background: $secondaryColor;
 
@@ -136,6 +149,11 @@
 
         @media screen and (max-width: 414px) {
             padding: 0 10px;
+        }
+
+        @media screen and (max-width: 360px) {
+            padding: 0 15px;
+            background: #F0F0F0;
         }
     }
 

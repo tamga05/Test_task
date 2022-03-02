@@ -462,7 +462,6 @@ template {
         max-height: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: 2;
-        padding-bottom: 0;
         padding: 0;
     }
 }
@@ -603,6 +602,7 @@ template {
 @media screen and (max-width: 414px) {
     .information__inner {
         row-gap: 0;
+        padding: 0;
     }
 }
 
@@ -661,6 +661,7 @@ template {
 }
 
 .information__public-1 {
+    height: 100%;
     background: #C4C4C4;
 }
 
@@ -684,7 +685,14 @@ template {
     }
 }
 
+@media screen and (max-width: 414px) {
+    .information__public-1-wrap {
+        padding: 0 10px;
+    }
+}
+
 .information__public-2 {
+    height: 100%;
     background: #C4C4C4;
 }
 
@@ -702,6 +710,12 @@ template {
     }
 }
 
+@media screen and (max-width: 414px) {
+    .information__public-2-wrap {
+        padding: 0 10px;
+    }
+}
+
 .information__public-3 {
     background: #C4C4C4;
 }
@@ -715,6 +729,12 @@ template {
 @media screen and (max-width: 414px) {
     .information__public-3 {
         height: 193px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .information__public-3-wrap {
+        padding: 0 10px;
     }
 }
 
