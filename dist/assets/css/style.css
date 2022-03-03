@@ -356,7 +356,7 @@ template {
     display: none;
 }
 
-.banner__subtitle, .information__news, .information__public-1, .information__public-2, .information__public-3, .information__span-2 {
+.banner__subtitle, .information__news, .information__public-1, .information__public-1-subtitle, .information__public-1-span-1, .information__public-1-span-2, .information__public-2, .information__public-3, .information__span-2 {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -706,6 +706,9 @@ template {
         height: 46px;
         margin-bottom: 12px;
         background: #C4C4C4;
+        padding-top: 3%;
+        padding-left: 8%;
+        font-weight: 700;
     }
 }
 
@@ -729,9 +732,11 @@ template {
 @media screen and (max-width: 768px) {
     .information__public-1-hidden {
         display: block;
-        height: 182px;
+        min-height: 182px;
         margin-bottom: 25px;
         background: #EFEFEF;
+        display: -ms-flexbox;
+        display: flex;
     }
 
     .information__public-1-hidden br {
@@ -750,6 +755,29 @@ template {
     height: 120px;
 }
 
+.information__public-1-content {
+    max-width: 496px;
+    margin-top: 17px;
+    margin-left: 27px;
+    padding-right: 5px;
+}
+
+.information__public-1-subtitle {
+    font-weight: 700;
+    color: #0078DC;
+}
+
+.information__public-1-span-1 {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.information__public-1-span-2 {
+    display: block;
+    margin-bottom: 10px;
+}
+
 .information__public-2 {
     height: 100%;
     background: #C4C4C4;
@@ -761,6 +789,8 @@ template {
     .information__public-2 {
         height: 182px;
         margin-bottom: 25px;
+        padding-top: 2%;
+        padding-left: 29%;
     }
 }
 
@@ -768,6 +798,8 @@ template {
     .information__public-2 {
         height: 46px;
         margin-bottom: 12px;
+        padding-top: 3%;
+        padding-left: 8%;
     }
 }
 
@@ -794,12 +826,31 @@ template {
 @media screen and (max-width: 768px) {
     .information__public-3 {
         height: 182px;
+        padding-top: 2%;
+        padding-left: 29%;
     }
 }
 
 @media screen and (max-width: 414px) {
     .information__public-3 {
-        height: 193px;
+        display: none;
+    }
+}
+
+.information__public-3-hidden {
+    display: none;
+}
+
+@media screen and (max-width: 414px) {
+    .information__public-3-hidden {
+        display: block;
+        min-height: 193px;
+        height: 100%;
+        padding-top: 8%;
+        padding-right: 5px;
+        padding-left: 6%;
+        padding-bottom: 10px;
+        background: #CFCFCF;
     }
 }
 
@@ -823,6 +874,12 @@ template {
 @media screen and (max-width: 768px) {
     .information__span-2 {
         display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .information__span-2 {
+        font-weight: 700;
     }
 }
 
