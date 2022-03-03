@@ -356,7 +356,7 @@ template {
     display: none;
 }
 
-.banner__quotes, .information__news, .information__public-1, .information__public-2, .information__public-3, .information__span-2 {
+.banner__subtitle, .information__news, .information__public-1, .information__public-2, .information__public-3, .information__span-2 {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -494,14 +494,12 @@ template {
 
 .banner__img {
     max-width: 100%;
-    height: 319px;
+    height: 100%;
 }
 
 @media screen and (max-width: 768px) {
     .banner__img {
         width: 100%;
-        max-height: 319px;
-        height: 100%;
     }
 }
 
@@ -553,19 +551,17 @@ template {
 .banner__quotes {
     width: 180px;
     height: 100%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
     background: #C4C4C4;
+    padding-top: 70%;
+    padding-left: 25%;
 }
 
 @media screen and (max-width: 768px) {
     .banner__quotes {
         font-size: 14px;
         line-height: 16px;
+        padding-top: 25%;
+        padding-left: 20%;
     }
 }
 
@@ -573,6 +569,24 @@ template {
     .banner__quotes {
         width: 100%;
         height: 319px;
+        font-size: 18px;
+        line-height: 21px;
+        padding-top: 40%;
+        padding-left: 25%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner__subtitle {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .banner__subtitle {
+        font-size: 18px;
+        line-height: 21px;
     }
 }
 
@@ -609,17 +623,23 @@ template {
 .information__news {
     height: 516px;
     background: #C4C4C4;
+    padding-top: 13%;
+    padding-left: 20%;
 }
 
 @media screen and (max-width: 768px) {
     .information__news {
         height: 309px;
+        padding-top: 5%;
+        padding-left: 20%;
     }
 }
 
 @media screen and (max-width: 414px) {
     .information__news {
         height: 516px;
+        padding-top: 15%;
+        padding-left: 20%;
     }
 }
 
@@ -663,10 +683,13 @@ template {
 .information__public-1 {
     height: 100%;
     background: #C4C4C4;
+    padding-top: 20%;
+    padding-left: 7%;
 }
 
 @media screen and (max-width: 768px) {
     .information__public-1 {
+        display: none;
         height: 182px;
         margin-bottom: 25px;
         background: #EFEFEF;
@@ -679,6 +702,7 @@ template {
 
 @media screen and (max-width: 414px) {
     .information__public-1 {
+        display: block;
         height: 46px;
         margin-bottom: 12px;
         background: #C4C4C4;
@@ -698,9 +722,39 @@ template {
     }
 }
 
+.information__public-1-hidden {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .information__public-1-hidden {
+        display: block;
+        height: 182px;
+        margin-bottom: 25px;
+        background: #EFEFEF;
+    }
+
+    .information__public-1-hidden br {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .information__public-1-hidden {
+        display: none;
+    }
+}
+
+.information__public-1-img {
+    width: 180px;
+    height: 120px;
+}
+
 .information__public-2 {
     height: 100%;
     background: #C4C4C4;
+    padding-top: 25%;
+    padding-left: 5%;
 }
 
 @media screen and (max-width: 768px) {
@@ -733,6 +787,8 @@ template {
 .information__public-3 {
     height: 100%;
     background: #C4C4C4;
+    padding-top: 30%;
+    padding-left: 34%;
 }
 
 @media screen and (max-width: 768px) {
@@ -859,9 +915,17 @@ template {
     background: #C4C4C4;
 }
 
+.footer__container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
 .footer__inner {
-    height: 371px;
+    padding-bottom: 41px;
+}
+
+.footer__main {
+    height: 330px;
     width: 100%;
     background: #0078DC;
-    padding-bottom: 41px;
 }
